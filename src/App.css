@@ -1,0 +1,4 @@
+.App,header{
+    background: var(--color-gray-default);
+    transition: all 0.25s ease-in;
+}

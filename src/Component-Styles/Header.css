@@ -1,0 +1,57 @@
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 68px;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+.navBar{
+    display: flex;
+    width: var(--responsive-px);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar svg{
+    height: 1.5rem;
+
+}
+.navBar svg path{
+    fill: var(--color-gray-900);
+}
+.navBar>div{
+    display: flex;
+    gap: 50px;
+}
+.navBar>div >ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.navBar>div >ul li a{
+    color:var(--color-gray-600);
+}
+.btns{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.btns :is(a,i){
+    cursor: pointer;
+}
+.btns a{
+    background: var(--color-gray-900);
+    color:var(--color-gray-50);
+    border-radius: 12px;
+    border:none;
+    padding: 10px 15px;
+}
+
+.btns i{
+    font-size: 1.5rem;
+    color:var(--color-gray-600);
+    width: 1.5rem;
+    aspect-ratio: 1;
+}

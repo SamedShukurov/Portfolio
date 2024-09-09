@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/*! Resetter  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --responsive-px: 1280px;
+}
+#light {
+    --color-gray-default: #ffffff;
+    --color-gray-900: #121826;
+    /* --color-gray-800: #121826;
+    --color-gray-700: #121826; */
+    --color-gray-600: #4d5562;
+    --color-gray-200:#e5e7eb;
+    --color-gray-50:#f9fafb;
+}
+#dark {
+    --color-gray-default: #040711;
+    --color-gray-900: #f9fafb;
+    /* --color-gray-800: #121826;
+    --color-gray-700: #121826; */
+    --color-gray-600: #d2d5da;
+    --color-gray-200:#e5e7eb;
+    --color-gray-50:#121826;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    max-width: var(--responsive-px);
+    padding: 96px 0;
+    margin: 0 auto;
+}
