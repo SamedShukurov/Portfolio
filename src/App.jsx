@@ -26,7 +26,6 @@ function App() {
     <div className='App' id="light">
       <Header darkModeToggle={darkModeToggle} />
       <Hero />
-      Test
     </div>
   )
 }
