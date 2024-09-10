@@ -1,4 +1,9 @@
 .App,header{
     background: var(--color-gray-default);
-    transition: all 0.25s ease-in;
+    transition: all 0.25s ease;
+}
+
+#dark :is(#about,#experience,#testimonial){
+    background: #111827;
+    transition: none;
 }

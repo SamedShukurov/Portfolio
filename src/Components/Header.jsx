@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import '../Component-Styles/Header.css'
 
 const Header = ({ darkModeToggle }) => {
@@ -25,7 +26,6 @@ const Header = ({ darkModeToggle }) => {
                             setBtn(!btn)
                         }}
                         ></i>
-                        {/* <i class="fa-sharp fa-solid fa-moon-stars"></i> */}
                         <a href="../files/Samed Shukurov CV.pdf" download={"CV.pdf"}>Download CV</a>
                     </div>
                 </div>

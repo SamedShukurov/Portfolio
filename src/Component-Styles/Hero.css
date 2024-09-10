@@ -1,17 +1,17 @@
-#hero {
+.hero-container{
     margin-top: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#hero > img {
+.hero-container > img {
     height: 360px;
     position: relative;
     box-shadow: 40px 40px var(--color-gray-200);
     border: 10px solid var(--color-gray-default);
 }
-#hero > article {
+.hero-container > article {
     width: 768px;
 }
 .hero-article-heading {
@@ -53,7 +53,7 @@
     animation: waving-hand 2.5s infinite;
     transform-origin: 70% 70%;
 }
-#hero > article > p {
+.hero-container > article > p {
     color: var(--color-gray-600);
 }
 .hero-article-heading.second{
