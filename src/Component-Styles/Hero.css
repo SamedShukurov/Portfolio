@@ -1,5 +1,5 @@
-.hero-container{
-    margin-top: 68px;
+.hero-container {
+    padding-top: calc((96px+59px));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,61 +56,79 @@
 .hero-container > article > p {
     color: var(--color-gray-600);
 }
-.hero-article-heading.second{
+.hero-article-heading.second {
     padding-left: 50px;
 }
-.icon-box{
+.icon-box {
     display: flex;
     gap: 16px;
 }
-article{
+article {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-.icon-box > :is(i,a){
+.icon-box > :is(i, a) {
     color: var(--color-gray-600);
     width: 24px;
     font-size: 24px;
 }
-.icon-box > i:checked{
+.icon-box > i:checked {
     color: var(--color-gray-600);
 }
 
-
-.hero-info{
+.hero-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.hero-info > div{
+.hero-info > div {
     display: flex;
     gap: 10px;
     align-items: center;
     color: var(--color-gray-600);
 }
-.hero-info > div a{
+.hero-info > div a {
     color: var(--color-gray-600);
 }
-.hero-info > .location i{
+.hero-info > .location i {
     font-size: 16px;
     width: 24px;
-    aspect-ratio:1;
+    aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-gray-600);
 }
-.hero-info > div:not(.location) i{
+.hero-info > div:not(.location) i {
     width: 24px;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.hero-info > div:not(.location) i div{
-    width: 8px;
-    aspect-ratio: 1;
-    background: #10B981;
+.hero-info > div:not(.location) i div {
+    background: #10b981;
     border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+}
+.hero-info > div:not(.location) i div::after {
+    content: "";
+    position: absolute;
+    background: #10b981;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    inset: 0;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+    75%,
+    100% {
+        scale: 2.5;
+        opacity: 0;
+    }
 }

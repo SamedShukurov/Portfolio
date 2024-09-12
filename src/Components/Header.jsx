@@ -26,7 +26,7 @@ const Header = ({ darkModeToggle }) => {
                             setBtn(!btn)
                         }}
                         ></i>
-                        <a href="../files/Samed Shukurov CV.pdf" download={"CV.pdf"}>Download CV</a>
+                        <a href="/files/Samed Shukurov CV.pdf" target="_blank">Download CV</a>
                     </div>
                 </div>
             </nav>
