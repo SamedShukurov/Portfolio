@@ -1,0 +1,10 @@
+.experience-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.experience-container > span{
+    color:var(--color-gray-600);
+    font-size: 1.2rem;
+}

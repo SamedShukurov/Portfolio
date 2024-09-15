@@ -1,0 +1,43 @@
+.skills-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.skills-container > span{
+    color:var(--color-gray-600);
+    font-size: 1.2rem;
+}
+
+.skill p{
+    content: "Express js";
+    text-align: center;
+    color: var(--color-gray-600);
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+}
+.skill img{
+    height: 64px;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+.skill a{
+    text-align: center;
+    
+}
+
+.skill:hover img{
+    scale: 1.1;
+}
+
+.skills-grid-box{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(8,minmax(100px,1fr));
+    margin-top: 32px;
+}
